@@ -31,11 +31,6 @@ a = float(input("请输入："))
 b = float(input("请输入："))
 print("a+b=",a+b)
 
-
-a = input("请输入：")
-b = input("请输入：")
-print("两段字符的长度=",len(a)+len(b))
-
 '''
 
 '''
@@ -96,9 +91,3 @@ print(b)
 print(a)
 
 '''
-#练习：获取用户输入的个人信息（name，age，sex）并储存到字典中。
-a = input("请输入姓名：")
-b = input("请输入年龄：")
-c = input("请输入性别：")
-d={"name":a,"age":b,"sex":c}
-print(d)
