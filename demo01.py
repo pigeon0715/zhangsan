@@ -31,7 +31,74 @@ a = float(input("请输入："))
 b = float(input("请输入："))
 print("a+b=",a+b)
 
-'''
+
 a = input("请输入：")
 b = input("请输入：")
 print("两段字符的长度=",len(a)+len(b))
+
+'''
+
+'''
+#元组，下标，从0开始编号
+a =(1,2,3,4,"哈哈","哈哈","哈哈","哈哈","哈哈","嘻嘻",True,False)
+print(a[-1])
+#切片
+print(a[0:4]) #左闭右开,开头的下标（0）和最后一个下标可省略
+print(a[4:9])
+print(a[9:])
+#print(a.index("嘻嘻"))
+#print(a.count("哈哈"))
+
+#二维元组
+b=(a,"hh","xx")
+print(b[0][2])
+'''
+
+#元组写好后不能修改数据，数组可修改
+"""
+a =[1,2,3,4,"哈哈","嘻嘻",True,False]
+a.append("测试")
+print(a)
+a.insert(0,"0代表插入位置的下标")
+print(a)
+a.pop(5) #剪切
+print(a)
+b = a.pop(1)
+c = a.pop(1)
+print(b+c)
+# a.clear()  清空
+xx=["你好","不好"]
+a.extend(xx)
+print(a)
+a.remove("你好")
+print(a)
+
+xx = [0,False,1,True]
+a = xx.count(0)
+print(a)
+"""
+
+'''
+a={"name":"张三",0:"haha","age":25}
+#取值
+print(a["name"])
+b = a.get("name")
+print(b)
+#新增
+a["height"]="183cm"
+print(a)
+#修改
+a["name"] = "李四"
+print(a)
+#剪切
+b=a.pop("name")
+print(b)
+print(a)
+
+'''
+#练习：获取用户输入的个人信息（name，age，sex）并储存到字典中。
+a = input("请输入姓名：")
+b = input("请输入年龄：")
+c = input("请输入性别：")
+d={"name":a,"age":b,"sex":c}
+print(d)
