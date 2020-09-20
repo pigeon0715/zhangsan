@@ -91,3 +91,7 @@ print(b)
 print(a)
 
 '''
+
+
+a=[]
+print(a.count("hh"))

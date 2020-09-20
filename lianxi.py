@@ -73,10 +73,11 @@ while True: #死循环
 #用户输入账号密码，要求账号长度是5—8位，密码6—12位，且账号必须小写开头。
 #储存到字典中，{username：password}
 
+'''
 userinfo={}
 username=input("请输入账号：")
 password=input("请输入密码：")
-if len(username) >= 5 or len(username) <= 8:
+if len(username) >= 5 and len(username) <= 8:
     if username[0] in "qwertyuiopasdfghjklzxcvbnm":
         if len(password) >=6 and len(password) <=12:
             print("ok",{username:password})
@@ -86,4 +87,6 @@ if len(username) >= 5 or len(username) <= 8:
         print("账号首字母必须为小写")
 else:
     print("账号长度是5—8位") 
+
+'''
 

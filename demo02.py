@@ -46,7 +46,43 @@ b = list(range(0,100,5)) #自动生成了一个数列,步进/步长
 print(b)
 for i in b:
     print(i)
-'''
 
 for i in range(10):
+    if i == 4:
+        break
     print(i)
+
+'''
+#第三次课
+'''
+def checkname(username):
+    if len(username) >= 5 and len(username) <= 8:
+        if username[0] in "qwertyuiopasdfghjklzxcvbnm":
+            print("ok")
+        else:
+            print("账号首字母必须为小写")
+    else:
+        print("账号长度是5—8位") 
+
+checkname("3213132swwwwr")
+#def 方法的声明
+#checkname 方法的名字
+#usernam 方法的参数
+
+
+def jiafa(a,b):
+    if type(a) is int and type(b) is int:
+        print(a+b)
+    else:
+        print("输入的参数不正确")
+
+jiafa("12",40)
+
+'''
+#把print换成return，则可以把retur的值用于后续代码中
+
+#异常捕获
+try:
+    print(2+ajshf)
+except Exception as e:
+    print("代码写错了",e)
