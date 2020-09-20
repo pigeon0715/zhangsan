@@ -90,3 +90,17 @@ else:
 
 '''
 
+#定义一个方法，用来判断用户输入的账号密码是否符合规范。
+def checkname(username,password):
+    if len(username) >= 5 and len(username) <= 8:
+        if username[0] in "qwertyuiopasdfghjklzxcvbnm":
+            if len(password) >=6 and len(password) <=12:
+                return 
+            else:
+                return("密码长度为6—12位")
+        else:
+            print("账号首字母必须为小写")
+    else:
+        return("账号长度是5—8位")
+
+checkname("313131","1264611")
